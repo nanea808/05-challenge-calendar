@@ -48,8 +48,8 @@ $(function () {
   var hour = dayjs().format('H');
   $('#hour-' + hour).addClass('present');
 
-  for (var x = hour; x < 24; x++) {
-    
+  for (var x = parseInt(hour) + 1; x < 25; x++) {
+    $('#hour-' + x).addClass('future');
   }
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
